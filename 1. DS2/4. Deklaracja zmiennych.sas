@@ -6,12 +6,12 @@ proc ds2;
       ;           /*A - zmienna globalna typu int*/
       
       method init();
-         ;     /*B - zmienna lokalna (dostêpna tylko w obrêbie metody init)*/
+         ;        /*B - zmienna lokalna (dostÄ™pna tylko w obrÄ™bie metody init)*/
       end;
       
       method run();
-         ;   /*C - lokalna zmienna tekstowa, pomieœci 20 znaków*/
-         ;            /*A jest globalna, mozna odwo³aæ siê do niej w dowolnej metodzie*/
+         ;        /*C - lokalna zmienna tekstowa, pomieÅ›ci 20 znakÃ³w*/
+         ;        /*A jest globalna, mozna odwoÅ‚aÄ‡ siÄ™ do niej w dowolnej metodzie*/
          ;        /*D - niezadeklarowana czyli globalna o typie double*/
       end;
       

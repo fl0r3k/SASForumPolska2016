@@ -1,4 +1,4 @@
-/*U¿ycie paczki*/
+/*Uzycie paczki*/
 
 proc ds2;
    data klasa_bmi(overwrite=yes);

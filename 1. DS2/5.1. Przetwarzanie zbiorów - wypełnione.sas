@@ -1,4 +1,4 @@
-/*Przetwarzanie zbiorów*/
+/*Przetwarzanie zbiorÃ³w*/
 
 proc ds2;
    data klasa2(overwrite=yes);   /*1*/
@@ -12,10 +12,10 @@ proc ds2;
 quit;
 
 /*1
-data klasa2(overwrite=yes); - zdefiniowanie zbiory wyjœciowego 'work.klasa2'.
+data klasa2(overwrite=yes); - zdefiniowanie zbiory wyjÅ›ciowego 'work.klasa2'.
 Domyslnie DS2 chroni nas przed przypadkowym nadpianiem zbioru.
-Aby nadpisaæ istniej¹cy zbiór nalezy ustwiæ opcjê 'overwrite'
-zbioru wyjœciowego na 'yes'.
+Aby nadpisaÄ‡ istniejÄ…cy zbiÃ³r nalezy ustwiÄ‡ opcjÄ™ 'overwrite'
+zbioru wyjÅ›ciowego na 'yes'.
 */
 
 /*2

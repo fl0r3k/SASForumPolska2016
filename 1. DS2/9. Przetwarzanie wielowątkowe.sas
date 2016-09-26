@@ -1,4 +1,4 @@
-/*Przetwarzanie wielow¹tkowe*/
+/*Przetwarzanie wielowÄ…tkowe*/
 
 proc ds2;
    thread watek / overwrite=yes;
@@ -12,7 +12,7 @@ proc ds2;
          set samochody;
          by Marka;
          wid=_threadid_;
-         put 'ID w¹tku: ' wid ' Marka: ' Marka ' Model: ' Model;
+         put 'ID wÄ…tku: ' wid ' Marka: ' Marka ' Model: ' Model;
       end;
       
       method term();

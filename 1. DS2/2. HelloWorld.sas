@@ -10,16 +10,16 @@ proc ds2;                     /*1*/
 quit;                         /*8*/
 
 /*1
-proc ds2; - otwarcie procedury DS2 do uruchamiania programów DS2.
+proc ds2; - otwarcie procedury DS2 do uruchamiania programÃ³w DS2.
 */
 
 /*2
-data _null_; - rozpoczêcie bloku data do przetwarzania danych
-_null_ oznacza brak zbioru wyjœciowego.
+data _null_; - rozpoczÄ™cie bloku data do przetwarzania danych
+_null_ oznacza brak zbioru wyjÅ›ciowego.
 */
 
 /*3
-method run(); - w metodzie run() odbywa siê g³ówne przetwarzanei danych.
+method run(); - w metodzie run() odbywa siÄ™ gÅ‚Ã³wne przetwarzanei danych.
 */
 
 /*4
@@ -27,11 +27,11 @@ put 'Hello, World!'; - wypisanie tekstu 'Hello, World!' do logu.
 */
 
 /*5
-end; - zakoñczenie metody run().
+end; - zakoÅ„czenie metody run().
 */
 
 /*6
-enddata; - zakoñczenie bloku data.
+enddata; - zakoÅ„czenie bloku data.
 */
 
 /*7
@@ -39,5 +39,5 @@ run; - uruchomienie bloku data.
 */
 
 /*8
-quit; - zakoñczenie procedury ds2.
+quit; - zakoÅ„czenie procedury ds2.
 */

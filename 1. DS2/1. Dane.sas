@@ -1,7 +1,7 @@
 /*Generowanie danych na potrzeby Warsztatu*/
 
 /*Przepisanie zbioru class do biblioteki work*/
-/*z przet³umaczeniem nazwy oraz nazw zmiennych*/
+/*z przetÅ‚umaczeniem nazwy oraz nazw zmiennych*/
 data klasa;
    set sashelp.class;
    rename
@@ -13,7 +13,7 @@ data klasa;
 run;
 
 /*Przepisanie zbioru cars do biblioteki work*/
-/*z przet³umaczeniem nazwy oraz nazw zmiennych*/
+/*z przetÅ‚umaczeniem nazwy oraz nazw zmiennych*/
 data samochody;
    set sashelp.cars;
    rename
@@ -35,7 +35,7 @@ data samochody;
 run;
 
 /*Zdefiniowanie pakietu konwersji jednostek*/
-/*miêdzy imperialnymi i metrycznymi*/
+/*miÄ™dzy imperialnymi i metrycznymi*/
 proc ds2;
    package konwersja / overwrite=yes;
       

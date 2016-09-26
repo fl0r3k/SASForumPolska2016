@@ -5,7 +5,7 @@ proc ds2;
    
       method init();/*1*/
          put '*****START*****';
-         put 'Rzeczy do zrobienia przed rozpoczêciem';
+         put 'Rzeczy do zrobienia przed rozpoczÄ™ciem';
          put 'przetwarzania danych.';
          put '***************';
          put ;
@@ -20,7 +20,7 @@ proc ds2;
       method term();/*2*/
          put ;
          put '***************';
-         put 'Rzeczy do zrobienia po zakoñczeniu';
+         put 'Rzeczy do zrobienia po zakoÅ„czeniu';
          put 'przetwarzania danych.';
          put '*****KONIEC*****';
       end;
@@ -31,11 +31,11 @@ quit;
 
 /*1
 method init(); - zdefiniowanie metody init().
-Wykonuje siê automatycznie tylko raz przed metod¹ run().
+Wykonuje siÄ™ automatycznie tylko raz przed metodÄ… run().
 */
 
 /*2
 method term(); - zdefiniowanie metody term().
-Wykonuje siê automatycznie tylko raz po zakoñczeniu metody run().
+Wykonuje siÄ™ automatycznie tylko raz po zakoÅ„czeniu metody run().
 */
 

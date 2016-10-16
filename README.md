@@ -2,9 +2,9 @@
 
 ## Wprowadzenie do programowania w PROC IMSTAT oraz języku DS2
 
-### Część I - Język DS2 czyli coś więcej niż DATA step
+Warsztat przeznaczony jest zarówno dla doświadczonych programistów SAS, jak i osób dopiero rozpoczynających swoją przygodę z kodami pisanymi w SAS. Zajęcia podzielone są na dwie części.
 
-Warsztat przeznaczony jest zarówno dla doświadczonych programistów SAS, jak i osób dopiero rozpoczynających swoją przygodę z kodami pisanymi w SAS. Zajęcia podzielone są na dwie części: Część I - Język DS2 czyli coś więcej niż DATA step 
+### Część I - Język DS2 czyli coś więcej niż DATA step
 
 DS2 jest językiem programowania SAS przeznaczonym do manipulacji danymi oraz aplikacji modelowania danych. Język DS2 ma wiele elementów wspólnych z klasycznym DATA stepem, jednak możliwości DS wykraczają znacznie poza te dostępne w DATA stepie. W ramach warsztatu zostanie przedstawiona składnia nowego języka, sposób transformacji klasycznego kodu DATA stepu do kodu DS2 oraz omówione zaawansowane możliwości DS2 tj. przetwarzanie równoległe czy in-database. 
 

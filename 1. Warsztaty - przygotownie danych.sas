@@ -39,3 +39,76 @@ data work.samochody;
       Wheelbase=RozstawOsi
       Length=Dlugosc;
 run;
+data work.irys;
+   set sashelp.iris;
+   rename
+      Species=Gatunek
+      SepalLength=DlugoscDzialekKielicha
+      SepalWidth=SzerokoscDzialekKielicha
+      PetalLength=DlugoscPlatka
+      PetalWidth=SzerokoscPlatka;
+run;
+
+
+%LASR_DropTable(im.klasa);
+data im.klasa;
+	set klasa;
+	part = ranuni(12345);
+run;
+
+%LASR_DropTable(im.samochody);
+data im.samochody;
+	set samochody;
+	part = ranuni(12345);
+run;
+
+%LASR_DropTable(im.irys);
+data im.irys;
+	set irys;
+	part = ranuni(12345);
+run;
+
+proc ds2 ;
+	package KonwerterJednostek / overwrite=yes;
+	
+		method KonwerterJednostek();
+		end;
+		
+		method Delete();
+		end;
+		
+		method LB2KG(double LB) returns double;
+			return LB/2.20462262;
+		end;
+		
+		method KG2LB(double KG) returns double;
+			return KG*2.20462262;
+		end;
+		
+		method IN2M(double IN) returns double;
+			return IN/39.3700787;
+		end;
+		
+		method M2IN(double M) returns double;
+			return M*39.3700787;
+		end;
+		
+		method MPG2L100(double MPG) returns double;
+			return 235.215/MPG;
+		end;
+		
+		method L1002MPG(double L100) returns double;
+			return 235.215/L100;
+		end;
+		
+		method C2F(double C) returns double;
+			return C*9/5 + 32;
+		end;
+		
+		method F2C(double F) returns double;
+			return (F-32)*5/9;
+		end;
+		
+	endpackage;
+	run;
+quit;

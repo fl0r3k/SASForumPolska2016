@@ -16,9 +16,9 @@ data samochody2;
 
  	rc = Obliczenia(1);
  	
- 	drop rc ;
- 	
  	if koniec then do;
  		put 'Data step przetworzył ' x ' wierszy.';
  	end;
+ 	
+ 	drop rc ;
 run;

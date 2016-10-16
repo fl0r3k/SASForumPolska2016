@@ -1,9 +1,3 @@
-/*załadowanie danych do pamięci serwera LASR*/
-%LASR_DropTable(im.samochody);
-data im.samochody;
-	set samochody;
-run;
-
 /*wyświetlenie tabel w pamięci serwera LASR*/
 proc imstat;
 	tableinfo;

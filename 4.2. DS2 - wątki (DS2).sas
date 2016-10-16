@@ -1,8 +1,8 @@
 proc ds2 ;
-	thread mojWatek / overwrite=yes;
+	thread MojWatek / overwrite=yes;
 		
-		dcl int x;
-		drop x;
+		dcl int licznik;
+		drop licznik;
 		
 		method Obliczenia(int n);
 			dcl int i;
@@ -13,17 +13,18 @@ proc ds2 ;
 		end;
 		
 		method init();
+			put 'Start wątka ' _threadid_;
 		end;
 		
 		method run();
 			set samochody;
 			by Marka;
-			x + 1;
+			licznik + 1;
 			Obliczenia(1);
 		end;
 		
 		method term();
-			put 'Wątek ' _threadid_ ' przetworzył ' x ' wierszy.';
+			put 'Zakończono wątek' _threadid_ '. Przetworzona liczba wierszy:' licznik;
 		end;
 		
 	endthread;
@@ -33,16 +34,10 @@ quit;
 proc ds2;
 	data samochody2(overwrite=yes);
 	
-		dcl thread mojWatek w();
-		
-		method init();
-		end;
+		dcl thread MojWatek w();
 		
 		method run();
 			set from w threads=5;
-		end;
-		
-		method term();
 		end;
 		
 	enddata;
